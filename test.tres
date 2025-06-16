@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogueSave" load_steps=2 format=3 uid="uid://dnd4xp3x6y8j1"]
+
+[ext_resource type="Script" uid="uid://crhpt7wuj5e3w" path="res://addons/phantomcloud_dialogue/DialogueSave.cs" id="1_umafu"]
+
+[resource]
+script = ExtResource("1_umafu")
+DialogueNodes = Array[int]([0, 3, 1])
+Connections = Array[Dictionary]([{
+"from_node": &"startNode",
+"from_port": 0,
+"keep_alive": false,
+"to_node": &"dialogueNode",
+"to_port": 0
+}, {
+"from_node": &"dialogueNode",
+"from_port": 0,
+"keep_alive": false,
+"to_node": &"endNode",
+"to_port": 0
+}])

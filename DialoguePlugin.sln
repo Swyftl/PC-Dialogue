@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialoguePlugin", "DialoguePlugin.csproj", "{3EC42AF7-265B-495C-8770-470F894B4DAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EC42AF7-265B-495C-8770-470F894B4DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC42AF7-265B-495C-8770-470F894B4DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC42AF7-265B-495C-8770-470F894B4DAE}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{3EC42AF7-265B-495C-8770-470F894B4DAE}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{3EC42AF7-265B-495C-8770-470F894B4DAE}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{3EC42AF7-265B-495C-8770-470F894B4DAE}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
