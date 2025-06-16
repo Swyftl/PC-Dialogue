@@ -68,29 +68,6 @@ offset_bottom = 44.0
 text = "Save"
 script = ExtResource("3_0xcx3")
 
-[node name="RightClickContext" type="Tree" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 285.0
-offset_top = 145.0
-offset_right = 473.0
-offset_bottom = 483.0
-
-[node name="MenuButton" type="MenuButton" parent="RightClickContext"]
-layout_mode = 1
-offset_right = 199.0
-offset_bottom = 31.0
-text = "New"
-item_count = 4
-popup/item_0/text = "New Start"
-popup/item_0/id = 0
-popup/item_1/text = "New Dialogue"
-popup/item_1/id = 1
-popup/item_2/text = "New Choice"
-popup/item_2/id = 2
-popup/item_3/text = "New End"
-popup/item_3/id = 3
-
 [connection signal="connection_request" from="GraphEdit" to="GraphEdit" method="_on_connection_request"]
 [connection signal="disconnection_request" from="GraphEdit" to="GraphEdit" method="_on_disconnection_request"]
 [connection signal="pressed" from="DeleteNode" to="GraphEdit" method="_on_delete_node_pressed"]
