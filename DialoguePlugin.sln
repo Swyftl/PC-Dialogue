@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialoguePlugin", "DialoguePlugin.csproj", "{3EC42AF7-265B-495C-8770-470F894B4DAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialoguePlugin", "DialoguePlugin.csproj", "{D207E9DF-091F-40BF-8FAC-61272CAB3CFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,11 +9,11 @@ Global
 	ExportRelease|Any CPU = ExportRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3EC42AF7-265B-495C-8770-470F894B4DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EC42AF7-265B-495C-8770-470F894B4DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EC42AF7-265B-495C-8770-470F894B4DAE}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
-		{3EC42AF7-265B-495C-8770-470F894B4DAE}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
-		{3EC42AF7-265B-495C-8770-470F894B4DAE}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
-		{3EC42AF7-265B-495C-8770-470F894B4DAE}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{D207E9DF-091F-40BF-8FAC-61272CAB3CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D207E9DF-091F-40BF-8FAC-61272CAB3CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D207E9DF-091F-40BF-8FAC-61272CAB3CFE}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{D207E9DF-091F-40BF-8FAC-61272CAB3CFE}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{D207E9DF-091F-40BF-8FAC-61272CAB3CFE}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{D207E9DF-091F-40BF-8FAC-61272CAB3CFE}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
 	EndGlobalSection
 EndGlobal
