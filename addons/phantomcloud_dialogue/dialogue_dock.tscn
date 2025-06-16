@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c4qjgvkjfpik4"]
+[gd_scene load_steps=6 format=3 uid="uid://c4qjgvkjfpik4"]
 
 [ext_resource type="Script" uid="uid://rx57b6ykdcpu" path="res://addons/phantomcloud_dialogue/NewNodeMenu.cs" id="1_463ef"]
 [ext_resource type="Script" uid="uid://bqc564iidt7ro" path="res://addons/phantomcloud_dialogue/GraphEdit.cs" id="1_hmyuy"]
 [ext_resource type="Script" uid="uid://bw0r6t46sjiti" path="res://addons/phantomcloud_dialogue/Save.cs" id="3_0xcx3"]
-[ext_resource type="Script" uid="uid://7rqupg6nq1ag" path="res://addons/phantomcloud_dialogue/RightClickContext.cs" id="4_wnv75"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_hmyuy"]
 device = -1
@@ -69,16 +68,18 @@ offset_bottom = 44.0
 text = "Save"
 script = ExtResource("3_0xcx3")
 
-[node name="RightClickContext" type="VBoxContainer" parent="."]
+[node name="RightClickContext" type="Tree" parent="."]
+visible = false
 layout_mode = 0
-offset_left = 339.0
-offset_top = 127.0
-offset_right = 538.0
-offset_bottom = 415.0
-script = ExtResource("4_wnv75")
+offset_left = 285.0
+offset_top = 145.0
+offset_right = 473.0
+offset_bottom = 483.0
 
 [node name="MenuButton" type="MenuButton" parent="RightClickContext"]
-layout_mode = 2
+layout_mode = 1
+offset_right = 199.0
+offset_bottom = 31.0
 text = "New"
 item_count = 4
 popup/item_0/text = "New Start"
