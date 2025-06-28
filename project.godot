@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="DialoguePlugin"
+config/tags=PackedStringArray("plugin")
 config/features=PackedStringArray("4.4", "C#")
 config/icon="res://icon.svg"
 

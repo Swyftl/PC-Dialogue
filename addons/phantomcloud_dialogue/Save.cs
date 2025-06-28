@@ -6,12 +6,12 @@ namespace DialoguePlugin.addons.phantomcloud_dialogue;
 [Tool]
 public partial class Save : Button
 {
-    private GraphEdit graphEdit;
-    private Resource SaveData;
+    private GraphEdit _graphEdit;
+    private Resource _saveData;
 
     public override void _Ready()
     {
-        graphEdit = GetNode<GraphEdit>(GetParent().GetChild(0).GetPath());
+        _graphEdit = GetNode<GraphEdit>(GetParent().GetChild(0).GetPath());
     }
 
     private void _on_pressed()
@@ -24,12 +24,11 @@ public partial class Save : Button
         
         GD.Print("Save Pressed");
 
-        SaveData = new DialogueSave();
+        _saveData = new DialogueSave();
 
         var SavedNodes = new Array<int>();
-        var SavedConnections = new Array<Dictionary>();
-        
-        foreach (Node node in graphEdit.GetChildren())
+
+        foreach (Node node in _graphEdit.GetChildren())
         {
             if (node is GraphNode graphNode)
             {
@@ -50,16 +49,16 @@ public partial class Save : Button
                 }
             }
         }
-        var NodeConnections = graphEdit.GetConnectionList();
+        var NodeConnections = _graphEdit.GetConnectionList();
         GD.Print(NodeConnections);
         
-        SavedConnections = NodeConnections;
+        var SavedConnections = NodeConnections;
 
-        if (SaveData is DialogueSave saveDataDialogue)
+        if (_saveData is DialogueSave saveDataDialogue)
         {
             saveDataDialogue.DialogueNodes = SavedNodes;
             saveDataDialogue.Connections = SavedConnections;
-            SaveData = saveDataDialogue;
+            _saveData = saveDataDialogue;
         }
 
         _get_save_path();
@@ -81,7 +80,7 @@ public partial class Save : Button
 
     private void _on_path_selected(string path)
     {
-        var SaveResult = ResourceSaver.Save(SaveData, path);
+        var SaveResult = ResourceSaver.Save(_saveData, path);
         GD.Print(path);
     }
 }
